@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="jquery-3.2.0.js"></script>
+		<style>
+			.bg-picture{
+					text-align: left;
+					border: 1px solid #bbb;
+					margin-bottom: 10px;
+					width: 410px;
+					height: 40px;
+					color: #bbbbbb;
+					font-size: 14px;
+					line-height: 40px;
+					padding-left: 10px;
+				    background: url(under.png) no-repeat 380px 10px;
+			}
+			.current{
+				background: url(up.png) no-repeat 380px 10px;
+				border: 1px solid #9c221f;
+				color: #9c221f;
+			}
+			.myclass{
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="mydiv" class="box">
+			<p class="bg-picture current">01.   月收入只有4000多可不可以申请汽车按揭贷款？</p>
+			
+			<div class="myclass" style="display: none;">我要现实的内容</div>
+			
+			<p class="bg-picture">01.   月收入只有4000多可不可以申请汽车按揭贷款？</p>
+			
+			<div class="myclass">我要现实的内容</div>
+			
+			<p class="bg-picture">01.   月收入只有4000多可不可以申请汽车按揭贷款？</p>
+			
+			<div class="myclass">我要现实的内容</div>
+		</div>
+		<script type="text/javascript">
+			$(function(){
+    	$(".myclass").eq(0).show();
+    	$(".bg-picture").click(function(){
+        $(this).toggleClass("current").siblings('.bg-picture').removeClass("current");//切换图标
+        $(this).next(".myclass").slideToggle(500).siblings(".myclass").slideUp(500);
+    });
+   });
+		</script>
+	</body>
+</html>
