@@ -12,7 +12,7 @@ sub{vertical-align:text-bottom}
 input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;*font-size:100%}
 legend{color:#000}
 a{text-decoration: none;}
-*{margin: 0;padding: 0;text-decoration: none;list-style: none;box-sizing: border-box;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;-ms-box-sizing:border-box;-o-box-sizing:border-box;}
+*{font-family:"微软雅黑";margin: 0;padding: 0;text-decoration: none;list-style: none;box-sizing: border-box;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;-ms-box-sizing:border-box;-o-box-sizing:border-box;}
 img{border: none;}
 article,aside,dialog,footer,header,section,nav,figure,menu{display:block}
 /*页面样式开始*/
@@ -316,6 +316,8 @@ nav{
 	padding-bottom: 60px;
 	margin: 0 auto;
 	text-align: center;
+	height: 710px;
+
 }
 .about>p:first-child{
 	font-size: 24px;
@@ -364,33 +366,77 @@ nav{
 	float: left;
 }
 .select{
-	height: 500px;
-}
-.select>ul>li{
+	margin-top: 140px;
+	width: 410px;
+	display: inline-block;
 	float: left;
+	margin-left: 60px;
+}
+.select2{
+	margin-top: 140px;
+	display: inline-block;
+	width: 410px;
+	float: left;
+	margin-left: 60px;
+}
+.bg-picture{
+	text-align: left;
+	border: 1px solid #bbb;
+	margin-bottom: 10px;
 	width: 410px;
 	height: 40px;
-	text-align: left;
-		margin: 15px 15px;
-}
-#oDiv{
-	border:1px solid #9c221f;
-	color: #9c221f;
+	color: #bbbbbb;
 	font-size: 14px;
-	background: url(../img/up.png) no-repeat 380px 12px;
-	height: 40px;
 	line-height: 40px;
 	padding-left: 10px;
-
+	background: url(../img/under.png) no-repeat 380px 10px;
 }
-.div1{
+.bg-picture:hover{
+	cursor: pointer;
+}
+.current{
+	color:#9c221f;
+	background:url(../img/up.png) no-repeat 380px 10px;
+	border:1px solid #9c221f;
+}
+.neirong{
+	display:none;
+	width: 410px;
 	color: #9c221f;
 	font-size: 14px;
-	padding-top: 30px;
-	padding-bottom: 30px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: left;
 }
-
-
+.bg-picture1{
+	text-align: left;
+	border: 1px solid #bbb;
+	margin-bottom: 10px;
+	width: 410px;
+	height: 40px;
+	color: #bbbbbb;
+	font-size: 14px;
+	line-height: 40px;
+	padding-left: 10px;
+	background: url(../img/under.png) no-repeat 380px 10px;
+}
+.bg-picture1:hover{
+	cursor: pointer;
+}
+.current1{
+	color:#9c221f;
+	background:url(../img/up.png) no-repeat 380px 10px;
+	border:1px solid #9c221f;
+}
+.neirong1{
+	display:none;
+	width: 410px;
+	color: #9c221f;
+	font-size: 14px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: left;
+}
 .maps{
 	width: 940px;
 	height: 600px;
@@ -405,6 +451,29 @@ nav{
 	background: #fff;
 	width: 100%;
 	height: 45px;
+}
+.about1{
+	width: 1000px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin: 0 auto;
+    text-align: center;
+}
+.about1>p:first-child{
+	font-size: 24px;
+	color: #666;
+}
+.about1>p:nth-child(2){
+	font-size: 14px;
+	color: #bbbbbb;
+	background: url(../img/line2.png) no-repeat 0 20px;
+	padding-top: 10px;
+}
+.about1>p:nth-child(3){
+	text-align: center;
+	background: url(../img/redline.png) no-repeat center;
+	line-height: 20px;
+	font-family: "微软雅黑";
 }
 /*百度地图样式开始*/
  .iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
