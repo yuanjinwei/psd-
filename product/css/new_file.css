@@ -143,6 +143,8 @@ header{
 	color: #fff;
 	font-size: 20px;
 	margin-bottom: 15px;
+	font-weight: normal;
+	font-family: "微软雅黑";
 }
 .content{
 	width: 1200px;
@@ -209,7 +211,7 @@ header{
 	background: rgba(31,45,117,.98);
 	border-bottom: 2px solid   #3a7bff;
 }
-.box1-div ul li{
+.box1-div li{
 	width: 100px;
 	height: 56px;
 	float: left;
@@ -217,7 +219,7 @@ header{
 	text-align: center;
 	line-height: 56px;
 }
-.box1-div ul li:hover{
+.box1-div  li:hover{
 	color: #fff;
 	background: rgba(31,45,117,.98);
  	cursor: pointer;
@@ -252,4 +254,197 @@ header{
 }
 .tu-foot img{
 	width: 1050px;
+}
+.box1-content2{
+	padding: 15px 0;
+}
+.tab-content2{
+	border-bottom: 1px solid rgba(255,255,255,.5);
+}
+.tab-content2 td{
+	font-size: 12px;
+	color: #fff;
+	padding: 10px 10px;
+}
+.tab-content3 {
+	width: 1050px;
+}
+.tab-content3 tbody tr {
+	background: -webkit-gradient(linear,left top,left bottom,from(rgba(22,27,73,.3)),to(rgba(51,59,137,.3)));
+    box-shadow: 0 4px 5px -3px #17193b;
+}
+.tab-content3 td{
+	padding: 15px 15px;
+}
+.report-div1{
+	width: 1050px;
+	height: 232px;
+	display: block;
+    background: -ms-linear-gradient(rgba(43,50,100,.1),rgba(43,50,100,1));/*IE渐变颜色*/
+    background: -moz-linear-gradient(top,rgba(43,50,100,.1),rgba(43,50,100,1));
+    background: -o-linear-gradient(rgba(43,50,100,.1),rgba(43,50,100,1));/*opera渐变颜色*/
+    background: -webkit-gradient(linear,left top,left bottom,from(rgba(43,50,100,.1)),to(rgba(43,50,100,1)));
+    padding: 50px 20px 20px;
+}
+.report-first{
+	display: block;
+    margin-right: 20px;
+    position: relative;
+    padding: 6px 0 0 20px;
+    font-size: 14px;
+    width: 310px;
+    height:137px ;
+    float: left;
+}
+.report-first b{
+	float: left;
+}
+.book{
+	display: block;
+    float: left;
+    width: 168px;
+    padding-left: 20px;
+}
+.book em{
+	    font-style: normal;
+    line-height: 22px;
+    height: 46px;
+    display: block;
+        color: #fff;
+}
+.book p{
+	color: #96a4e8;
+    font-size: 12px;
+    line-height: 22px;
+    margin-top: 24px;
+}
+.book a.button{
+	position: absolute;
+    top: 74px;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 24px;
+    border-radius: 16px;
+    margin-top: 24px;
+    display: block;
+    float: left;
+    background: #6b7ccd;
+    font-size: 12px;
+}
+.book span{
+	position: absolute;
+    top: 128px;
+}
+
+
+
+
+
+			#container {
+				width: 1050px;
+				height: 460px;
+				overflow: hidden;
+				position: relative;
+				margin-top: 20px;
+			}
+			
+			#list {
+				width: 13650px;
+				height: 400px;
+				position: absolute;
+				top: 50px;
+				z-index: 1;
+			}
+			
+			#list div {
+				float: left;
+				width: 1050px;
+				height: 400px;
+				padding: 20px 35px;
+			}
+			#list div table{
+				width: 100%;
+			}
+			#list div table td{
+				font-size: 12px;
+			    color: #fff;
+			    padding: 10px 10px;
+			}
+			#buttons {
+				position: absolute;
+				height: 10px;
+				width: 1000px;
+				z-index: 2;
+				top: 20px;
+				left: 25px;
+			}
+			
+			#buttons span {
+				cursor: pointer;
+				float: left;
+				width: 90px;
+				height: 5px;
+				border-radius: 5px;
+				background: #333;
+			}
+			
+			#buttons .on {
+				box-shadow: 0 1px 0 #58a1e0 inset;
+				background: -webkit-gradient(linear, 0 0, 0 100%, from(#4092da), color-stop(60%, #2775cd));
+				background: -ms-linear-gradient(top, #4092da 0, #2775cd 100%);
+				background: -webkit-linear-gradient(top, #4092da 0, #2775cd 100%);
+				background: -moz-linear-gradient(top, rgba(64, 146, 218, .8), rgba(39, 117, 205, 1));
+			}
+			
+			.arrow {
+				cursor: pointer;
+				line-height: 39px;
+				text-align: center;
+				line-height: 25px;
+				font-size: 18px;
+				font-weight: bold;
+				width: 25px;
+				height: 25px;
+				position: absolute;
+				z-index: 2;
+				top: 10px;
+				color:  #6570b2;
+				background: #394084;
+			}
+			#prev {
+				left: 0px;
+			}
+			#next {
+				right: 0px;
+			}
+			.year {
+				width: 1000px;
+				height: 15px;
+				position: absolute;
+				left: 25px;
+			}
+			.year ul li{
+				width: 90px;
+				height: 15px;
+				font-size: 14px;
+				color: #2775CD;
+				float: left;
+				text-align: center;
+			}
+			
+.box2{
+			background: rgba(47,103,226,.1);
+		}
+.box2 ul{
+	    height: 56px;
+    	background: rgba(58,122,254,.12);
+    	padding: 0 30px;
+}
+.box2 ul li{
+	width: 100px;
+	height: 56px;
+	float: left;
+	font-size: 14px;
+	line-height: 56px;
+	text-align: center;
 }
