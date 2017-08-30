@@ -17,6 +17,7 @@ img{border: none;}
 article,aside,dialog,footer,header,section,nav,figure,menu{display:block}
 body{
 	background: url(../img/bg-container.png) top center no-repeat fixed;
+	position: relative;
 }
 header{
 	padding-left: 20px;
@@ -129,6 +130,9 @@ header{
     box-shadow: 0 4px 5px -3px #17193b;
     height: 66px;
 }
+.detailed{
+	margin: 0 auto;
+}
 .company{
 	width: 1200px;
 	height: 66px;
@@ -146,21 +150,38 @@ header{
 	font-weight: normal;
 	font-family: "微软雅黑";
 }
+.status{
+	display: inline-block;
+	background: green;
+	width: 50px;
+	height: 25px;
+	position: absolute;
+	top: 20px;
+	left: 280px;
+	color: #fff;
+	text-align: center;
+	line-height: 25px;
+	border-radius: 5px;
+	border-radius: 5px/9;
+}
 .content{
 	width: 1200px;
-	height: 1000px;
 	margin: 32px auto 0;
     position: relative;
-    padding-bottom: 100px;
-    box-sizing: border-box;
+       box-sizing: border-box;
+       display: block;
+       clear: both;
+     overflow: hidden;
 }
 .meun{
-	float: left;
 	display: block;
     box-shadow: 0 4px 8px #17193b;
     background: rgba(48,94,202,.12);
     padding: 10px 0;
     border-radius: 2px;
+    width: 120px;
+    height: 188px;
+    float: left;
 }
 .meun ul{
 	 width: 120px;
@@ -188,18 +209,22 @@ header{
 }
 .box{
 	width: 1050px;
-	float: left;
     margin-left: 30px;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     border-top: 2px solid #3a7bff;
     color: #8493e3;
+    float: left;
 }
 .box1{
 	background: rgba(47,103,226,.1);
 }
 .box1-content{
-	padding: 15px 0;
+	padding: 15px 25px;
+	position: relative;
+}
+.box1-content4{
+	height: 800px;
 }
 .box1-div{
 	height: 56px;
@@ -236,6 +261,7 @@ header{
 .tab2{
 	border-bottom: 1px solid rgba(255,255,255,.5);
 	margin-top: 20px;
+	padding: 15px 15px;
 }
 .tab2 td{
 	font-size: 12px;
@@ -256,10 +282,11 @@ header{
 	width: 1050px;
 }
 .box1-content2{
-	padding: 15px 0;
+	padding: 15px 25px;
+	height: 800px;
 }
 .tab-content2{
-	border-bottom: 1px solid rgba(255,255,255,.5);
+	width: 100%;
 }
 .tab-content2 td{
 	font-size: 12px;
@@ -447,4 +474,57 @@ header{
 	font-size: 14px;
 	line-height: 56px;
 	text-align: center;
+	cursor: pointer;
+}
+.even, .design, .construction,.impact,.safety,.water-soil,.disaster,.forestry,.other{
+	padding: 15px 30px;
+	height: 800px;
+}
+.even-tab{
+	width: 100%;
+}
+.even-tab tr{
+	border-bottom:  1px solid rgba(255,255,255,.2);
+}
+.even-tab thead th{
+	font-size: 15px;
+	height: 35px;
+	color: #fff;
+}
+.even-tab thead th:nth-child(2){
+	text-align: left;
+}
+.even-tab tbody td{
+	font-size: 14px;
+	height: 35px;
+}
+.even-tab tbody td:nth-child(2){
+	text-align: left;
+}
+.even-tab tbody td:nth-child(2) a{
+	color: #3a7bff;
+}
+.coordinate{
+	width: 600px;
+	position: absolute;
+	top: 190px;
+	right: 220px;
+	z-index: 9999;
+	background: #394184;
+	border: 2px solid #fff;
+	padding: 15px 15px;
+	display: none;
+}
+.coord-tab{
+	width: 100%;
+}
+.coord-tab thead th{
+	font-size: 16px;
+    color: #fff;
+    padding: 10px 10px;
+}
+.coord-tab tbody td{
+	font-size: 12px;
+    color: #fff;
+    padding: 10px 10px;
 }
