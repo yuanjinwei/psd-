@@ -3,7 +3,11 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>煤矿信息</title>
-		<link rel="stylesheet" href="css/new_file.css" />
+		<link rel="stylesheet" href="css/new_file.css" /> 
+		<!--引入Jquery库-->
+		<script src="js/jquery-3.2.0.js"></script>
+		<!--引入js文件-->
+		<script src="js/new_file.js"></script>
 		<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
 		<!-- 兼容IE -->
 		<!--[if lt IE 9]>
@@ -71,6 +75,7 @@
 								<li class="active1">煤矿基本资料</li>
 								<li>集团信息</li>
 								<li>相关证件</li>
+								<li>兼并重组</li>
 								<li>时间轴追溯</li>
 								<li>网络云</li>
 							</ul>
@@ -79,364 +84,445 @@
 							<table class="box1-table" width="100%" border="0" cellpadding="0"  cellpadding="0">
 								<tbody>
 									<tr>
-										<td>煤矿名称:</td>
-										<td colspan="5">贵州新西南矿业股份有限公司毕节市七星关区杨家湾煤矿</td>
-										<td>集团名称:</td>
-										<td>贵州新西南矿业股份有限公司</td>
-										<td>煤矿负责人:</td>
+										<td style="color:rgb(255,255,255);">煤矿名称:</td>
+										<td style="color: rgb(132, 147, 227);">贵州新西南矿业股份有限公司毕节市七星关区杨家湾煤矿</td>
+										<td>法人或隶属集团:</td>
+										<td colspan="3" style="color: rgb(132, 147, 227);">&nbsp;</td>
+										<td colspan="2"><a href="###" class="organization">组织架构</a></td>
+									</tr>
+									<tr class="tr2">
+										<td>煤矿所在地:</td>
+										<td>&nbsp;</td>
+										<td>联系人:</td>
 										<td>某某某</td>
-										<td>联系方式:</td>
-										<td>12345678911</td>
+										<td>联系邮箱:</td>
+										<td>&nbsp;</td>
+										<td>联系电话:</td>
+										<td>18888888888</td>
+									</tr>
+								</tbody>
+							</table>
+							<table width="100%" border="0" cellpadding="0" cellspacing="0" class="tab5">
+								<tbody>
+									<tr>
+										<td style="border-bottom: 2px solid orange;text-align: center;">证件信息:</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td style="border-bottom: 2px solid orange;text-align: center;">周边条件:</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>	
 									</tr>
 									<tr>
-										<td>煤矿性质:</td>
-										<td>民营</td>
-										<td>矿井生产能力:</td>
-										<td>40万</td>
-										<td>矿井服务年限:</td>
-										<td>20年</td>
-										<td>采矿权有效期:</td>
-										<td>2019/6/1</td>
-										<td>煤矿性质:</td>
-										<td>生产矿井</td>
-										<td>股本构成:</td>
-										<td>100</td>
+										<td>&nbsp;</td>
+										<td>采矿许可证:</td>
+										<td>C520000011161</td>
+										<td>规模:</td>
+										<td>&nbsp;</td>
+										<td>有效期:</td>
+										<td>2020-2-2</td>
+										<td>&nbsp;</td>
+										<td>周边是否有可扩界区域:</td>
+										<td><a href="##">是</a></td>
+										<td>&nbsp;</td>
+										<td>是否临近禁采禁建区域:</td>
+										<td><a href="##">是</a></td>
+										<td>&nbsp;</td>
 									</tr>
 									<tr>
+										<td>&nbsp;</td>
 										<td>矿区面积:</td>
 										<td>&nbsp;</td>
-										<td>开采方式:</td>
+										<td>开采标高:</td>
 										<td>&nbsp;</td>
-										<td>瓦斯突出性:</td>
+										<td>发证时间:</td>
+										<td>2017-9-7</td>
 										<td>&nbsp;</td>
-										<td>瓦斯等级:</td>
+										<td>是否有地质灾害隐患:</td>
+										<td><a href="##">是</a></td>
 										<td>&nbsp;</td>
-										<td>煤种:</td>
-										<td>&nbsp;</td>
-										<td>&nbsp;</td>
-										<td>&nbsp;</td>
-									</tr>
-								</tbody>
-							</table>
-							<table class="tab2" width="100%" border="0" cellpadding="0" cellspacing="0">
-								<tbody>
-									<tr>
-										<td style="border-bottom: 2px solid orange;text-align: center;">煤层编号:</td>
-										<td>&nbsp;</td>
-										<td>&nbsp;</td>
-										<td style="border-bottom: 2px solid orange;text-align: center;">资源储量:</td>
-										<td>&nbsp;</td>
-										<td>&nbsp;</td>
-										<td style="border-bottom: 2px solid orange;text-align: center;">井田面积:</td>
-										<td>&nbsp;</td>
+										<td>矿区范围内房屋是否全部搬迁:</td>
+										<td><a href="##">是</a></td>
 										<td>&nbsp;</td>
 									</tr>
 									<tr>
 										<td>&nbsp;</td>
-										<td>批准开采煤层编号(兼并前):</td>
-										<td style="color:#8493e3">M6、M7、M10、M23、M33</td>
+										<td>安全生产许可证:</td>
 										<td>&nbsp;</td>
-										<td>煤牌号:</td>
-										<td style="color:#8493e3">&nbsp;</td>
-										<td>&nbsp;</td>
-										<td>井田面积(兼并前):</td>
-										<td style="color:#8493e3">&nbsp;</td>
-									</tr>
-									<tr>
-										<td>&nbsp;</td>
-										<td>批准开采煤层编号(兼并后):	</td>
-										<td style="color:#8493e3">M6、M7、M10、M23、M33</td>
-										<td>&nbsp;</td>
-										<td>设计利用资源/储量:</td>
-										<td style="color:#8493e3">&nbsp;</td>
-										<td>&nbsp;</td>
-										<td>井田面积(兼并后):</td>
-										<td style="color:#8493e3">&nbsp;</td>
-									</tr>
-									<tr>
-										<td>&nbsp;</td>
-										<td>批准开采煤层编号(新增):</td>
-										<td style="color:#8493e3">&nbsp;</td>
-										<td>&nbsp;</td>
-										<td>可采资源/储量:</td>
-										<td style="color:#8493e3">&nbsp;</td>
-										<td>&nbsp;</td>
-										<td>井田面积(新增):</td>
-										<td style="color:#8493e3">&nbsp;</td>
-									</tr>
-									<tr>
-										<td style="border-bottom: 2px solid orange;text-align: center;">煤层情况:</td>
-										<td></td>
-										<td style="color:#8493e3">&nbsp;</td>
-										<td>&nbsp;</td>
-										<td>保有储量(兼并前):</td>
-										<td style="color:#8493e3">&nbsp;</td>
-										<td style="border-bottom: 2px solid orange;text-align: center;">生产规模:</td>
-										<td style="color:#8493e3">&nbsp;</td>
-										<td>&nbsp;</td>
-									</tr>
-									<tr>
-										<td>&nbsp;</td>
-										<td>煤层平均倾角:</td>
-										<td style="color:#8493e3">&nbsp;</td>
-										<td>&nbsp;</td>
-										<td>保有储量(兼并后):</td>
-										<td style="color:#8493e3">&nbsp;</td>
-										<td>&nbsp;</td>
-										<td>生产规模(兼并前):</td>
-										<td style="color:#8493e3">&nbsp;</td>
-									</tr>
-									<tr>
-										<td>&nbsp;</td>
-										<td>可采煤层总厚度:</td>
-										<td style="color:#8493e3">&nbsp;</td>
-										<td>&nbsp;</td>
-										<td >保有储量(新增):</td>
-										<td style="color:#8493e3">&nbsp;</td>
-										<td>&nbsp;</td>
-										<td>生产规模(兼并后):</td>
-										<td style="color:#8493e3">&nbsp;</td>
-									</tr>
-									<tr>
-										<td>&nbsp;</td>
-										<td>可采及大部可采煤层层数:</td>
-										<td style="color:#8493e3">&nbsp;</td>
-										<td>&nbsp;</td>
-										<td style="color:#8493e3">&nbsp;</td>
-										<td>&nbsp;</td>
-										<td>&nbsp;</td>
-										<td>生产规模(新增):</td>
-										<td style="color:#8493e3">&nbsp;</td>
-									</tr>
-									<tr>
-										<td style="border-bottom: 2px solid orange;text-align: center;">开采标高:</td>
-										<td>&nbsp;</td>
-										<td style="color:#8493e3">&nbsp;</td>
-										<td style="border-bottom: 2px solid orange;text-align: center;">地理坐标:</td>
-										<td>&nbsp;</td>
-										<td style="color:#8493e3">&nbsp;</td>
-										<td style="border-bottom: 2px solid orange;text-align: center;">拐点坐标:</td>
-										<td style="color:#8493e3">&nbsp;</td>
-										<td>&nbsp;</td>
-									</tr>
-									<tr>
-										<td>&nbsp;</td>
-										<td>开采标高(技改前):</td>
-										<td style="color:#8493e3">&nbsp;</td>
-										<td>&nbsp;</td>
-										<td>经度:</td>
-										<td style="color:#8493e3">&nbsp;</td>
-										<td>&nbsp;</td>
-										<td><a href="###" id="zuobiao" style="color: #fff;background: #394184;padding: 5px;border-radius: 5px;" >拐点坐标</a></td>
-										<td style="color:#8493e3">&nbsp;</td>
-									</tr>
-									<tr>
-										<td>&nbsp;</td>
-										<td>开采标高(技改后):</td>
-										<td>&nbsp;</td>
-										<td>&nbsp;</td>
-										<td>纬度:</td>
-										<td style="color:#8493e3">&nbsp;</td>
-										<td>&nbsp;</td>
-										<td><a href="###"  style="color: #fff;background: #394184;padding: 5px;border-radius: 5px;"  target="_blank">简图</a></td>
-										<td style="color:#8493e3">&nbsp;</td>
-									</tr>
-								</tbody>
-							</table>
-							<table class="tab3" border="0" cellpadding="0" cellspacing="0">
-								<tbody>
-									<tr>
-										<td  style="border-bottom: 2px solid orange;text-align: center;">文件号:</td>
-										<td>&nbsp;</td>
-										<td>&nbsp;</td>
-										<td>&nbsp;</td>
-										<td>&nbsp;</td>
-										<td>&nbsp;</td>
-										<td>&nbsp;</td>
-										<td style="border-bottom: 2px solid orange;text-align: center;">履行义务</td>
-										<td>&nbsp;</td>
-										<td>&nbsp;</td>
-									</tr>
-									<tr>
-										<td>&nbsp;</td>
-										<td>采矿许可证号(证号):</td>
-										<td style="color:#8493e3">C520000156102165461</td>
 										<td>规模:</td>
 										<td>&nbsp;</td>
 										<td>有效期:</td>
+										<td>2017-9-7</td>
 										<td>&nbsp;</td>
-										<td>&nbsp;</td>
-										<td>
-											矿产资源补偿费(应缴)
-											<br />
-											<br />
-											矿产资源补偿费(减缴)
-										</td>
-										<td>&nbsp;</td>
+										<td>与最近主干道运输距离:</td>
+										<td colspan="2">15KM</td>
+										<td>与最近煤炭需求方运输距离:</td>
+										<td colspan="2">15KM</td>	
 									</tr>
 									<tr>
 										<td>&nbsp;</td>
-										<td>安全生产许可证号(证号):</td>
-										<td style="color:#8493e3">(黔)MK安许证字【1743】</td>
-										<td>规模:</td>
+										<td>营业执照证号:</td>
 										<td>&nbsp;</td>
-										<td>有效期:</td>
-										<td>&nbsp;</td>
-										<td>&nbsp;</td>
-										<td>
-											矿产资源补偿费(实缴)
-											<br />
-											<br />
-											矿产资源补偿费(欠费合计)
-										</td>
-										<td>&nbsp;</td>
-									</tr>
-									<tr>
-										<td>&nbsp;</td>
-										<td>设计批准文号:</td>
-										<td style="color:#8493e3">&nbsp;</td>
-										<td>&nbsp;</td>
-										<td>&nbsp;</td>
-										<td>&nbsp;</td>
-										<td>&nbsp;</td>
-										<td>&nbsp;</td>
-										<td>
-											采矿权使用费(应缴)
-											<br />
-											<br />
-											采矿权使用费(减缴)
-										</td>
-										<td>&nbsp;</td>
-									</tr>
-									<tr>
-										<td>&nbsp;</td>
-										<td>预划矿区批准文号:</td>
-										<td style="color:#8493e3">&nbsp;</td>
-										<td>&nbsp;</td>
-										<td>&nbsp;</td>
-										<td>&nbsp;</td>
-										<td>&nbsp;</td>
-										<td>&nbsp;</td>
-										<td>
-											采矿权使用费(实缴)
-											<br />
-											<br />
-											采矿权使用费(欠费合计)
-										</td>
-										<td>&nbsp;</td>
-									</tr>
-									<tr>
-										<td>&nbsp;</td>
-										<td>安全专篇批准文号:</td>
-										<td style="color:#8493e3">&nbsp;</td>
-										<td>&nbsp;</td>
-										<td>&nbsp;</td>
-										<td>&nbsp;</td>
-										<td>&nbsp;</td>
-										<td>&nbsp;</td>
-										<td>
-											采矿权价款(应缴)
-											<br />
-											<br />
-											采矿权价款(减缴)
-										</td>
-										<td>&nbsp;</td>
-									</tr>
-									<tr>
-										<td>&nbsp;</td>
-										<td>营业执照(证号):</td>
-										<td style="color:#8493e3">&nbsp;</td>
 										<td>经济类型:</td>
 										<td>&nbsp;</td>
 										<td>有效期:</td>
+										<td>2017-9-7</td>
+										<td>&nbsp;</td>
+										<td>交通情况:</td>
+										<td colspan="4">&nbsp;</td>
+									</tr>
+								</tbody>
+							</table>
+							<table class="tab2" width="100%" border="0" cellpadding="0" cellspacing="0" >
+								<tbody>
+									<tr>
+										<td style="border-bottom: 2px solid orange;text-align: center;">地质条件:</td>
 										<td>&nbsp;</td>
 										<td>&nbsp;</td>
-										<td>
-											采矿权价款(实缴)
-											<br />
-											<br />
-											采矿权价款(欠费合计)
-										</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td style="border-bottom: 2px solid orange;text-align: center;">财务状况</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
 										<td>&nbsp;</td>
 									</tr>
 									<tr>
 										<td>&nbsp;</td>
-										<td>企业法人营业执照(证号):</td>
-										<td style="color:#8493e3">&nbsp;</td>
+										<td>可开采煤层数:</td>
+										<td>&nbsp;</td>
+										<td>煤层厚度:</td>
+										<td>&nbsp;</td>
+										<td>煤层倾角:</td>
+										<td>&nbsp;</td>
+										<td>煤层赋存情况:</td>
 										<td>&nbsp;</td>
 										<td>&nbsp;</td>
+										<td>股本构成:</td>
 										<td>&nbsp;</td>
+										<td>出资方式:</td>
 										<td>&nbsp;</td>
-										<td>&nbsp;</td>
-										<td>
-											矿山地质环境治理恢复保证金(应缴)
-											<br />
-											<br />
-											矿山地质环境治理恢复保证金(减缴)
-										</td>
-										<td>&nbsp;</td>
-									</tr>
-									<tr>
-										<td>&nbsp;</td>
-										<td>煤矿矿长资格证书(证号):</td>
-										<td style="color:#8493e3">&nbsp;</td>
-										<td>&nbsp;</td>
-										<td>&nbsp;</td>
-										<td>&nbsp;</td>
-										<td>&nbsp;</td>
-										<td>&nbsp;</td>
-										<td>
-											矿山地质环境治理恢复保证金
-											<br />
-											<br />
-											矿山地质环境治理恢复保证金
-										</td>
+										<td>上年度营收入:</td>
 										<td>&nbsp;</td>
 									</tr>
 									<tr>
 										<td>&nbsp;</td>
-										<td>煤矿安全资格证书(证号):</td>
-										<td style="color:#8493e3">&nbsp;</td>
+										<td>保有资源储量:</td>
+										<td>&nbsp;</td>
+										<td>设计利用资源储量:</td>
+										<td colspan="3">&nbsp;</td>
+										<td>背斜数量:</td>
 										<td>&nbsp;</td>
 										<td>&nbsp;</td>
+										<td>上年度运营成本:</td>
 										<td>&nbsp;</td>
+										<td>上年度所得税额:</td>
 										<td>&nbsp;</td>
-										<td>&nbsp;</td>
-										<td>
-											土地复垦费(应缴)
-											<br />
-											<br />
-											土地复垦费(减缴)
-										</td>
-										<td>&nbsp;</td>
-									</tr>
-									<tr>
-										<td style="border-bottom: 2px solid orange;text-align: center;">兼并重组:</td>
-										<td>&nbsp;</td>
-										<td style="color:#8493e3">&nbsp;</td>
-										<td>&nbsp;</td>
-										<td>&nbsp;</td>
-										<td>&nbsp;</td>
-										<td>&nbsp;</td>
-										<td>&nbsp;</td>
-										<td>
-											土地复垦费(实缴)
-											<br />
-											<br />
-											土地复垦费(欠费合计)
-										</td>
+										<td>在岗人数:</td>
 										<td>&nbsp;</td>
 									</tr>
 									<tr>
 										<td>&nbsp;</td>
+										<td>断层数量(落差小于10米):</td>
+										<td colspan="3">&nbsp;</td>
+										<td>断层数量(落差10-30米):</td>
+										<td colspan="3">&nbsp;</td>
 										<td>&nbsp;</td>
-										<td style="color:#8493e3">&nbsp;</td>
+										<td>上年度营业税额:</td>
+										<td>100万</td>
+										<td>上年度增值税额:</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+									</tr>
+									<tr>
+										<td>&nbsp;</td>
+										<td>断层数量(30米以上):</td>
+										<td>&nbsp;</td>
+										<td>瓦斯等级:</td>
+										<td>&nbsp;</td>
+										<td>煤与瓦斯突出:</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>上年度缴纳城建税:</td>
+										<td>&nbsp;</td>
+										<td>上年度缴纳教育附加税:</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+									</tr>
+									<tr>
+										<td>&nbsp;</td>
+										<td>煤层自燃性:</td>
+										<td>&nbsp;</td>
+										<td>煤层爆炸性:</td>
+										<td>&nbsp;</td>
+										<td>地质构造复杂程度:</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>上年度缴纳资源税:</td>
+										<td colspan="5">&nbsp;</td>
+									</tr>
+									<tr>
+										<td>&nbsp;</td>
+										<td>泳水量(正常):</td>
+										<td>&nbsp;</td>
+										<td>泳水量(最大):</td>
 										<td>&nbsp;</td>
 										<td>&nbsp;</td>
 										<td>&nbsp;</td>
 										<td>&nbsp;</td>
 										<td>&nbsp;</td>
 										<td>&nbsp;</td>
+										<td>是否存在抵押状况:</td>
+										<td><a href="##">是</a></td>
+										<td>是否融资或借贷:</td>
+										<td><a href="##">是</a></td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+									</tr>
+									<tr>
+										<td>&nbsp;</td>
+										<td>水文地质构造复杂程度:</td>
+										<td colspan="7">&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>融资或借贷总金额:</td>
+										<td>&nbsp;</td>
+										<td>是否存在经济纠纷:</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+									</tr>
+									<tr>
+										<td>&nbsp;</td>
+										<td><a href="##" id="zuobiao" class="organization">拐点坐标</a></td>
+										<td colspan="2"><a href="##" id="diagram" class="organization">简图</a></td>
+										<td colspan="5">&nbsp;</td>
+										<td>&nbsp;</td>	
+										<td>备注:</td>
+										<td colspan="5">&nbsp;</td>
+									</tr>
+								</tbody>
+							</table>
+							<table class="tab3" border="0" cellpadding="0" cellspacing="0" width="100%">
+								<tbody>
+									<tr>
+										<td style="border-bottom: 2px solid orange;text-align: center;">开采现状:</td>
+										<td colspan="12">&nbsp;</td>
+									</tr>
+									<tr>
+										<td>&nbsp;</td>
+										<td>核定生产能力:</td>
+										<td>&nbsp;</td>
+										<td>开采开始时间:</td>
+										<td>&nbsp;</td>
+										<td>上年度实际开采能力:</td>
+										<td>&nbsp;</td>
+										<td>开拓方式:</td>
+										<td>&nbsp;</td>
+										<td>开采方式:</td>
+										<td>&nbsp;</td>
+										<td>采出煤类:</td>
+										<td>&nbsp;</td>
+									</tr>
+									<tr>
+										<td>&nbsp;</td>
+										<td>主协井坐标:</td>
+										<td>&nbsp;</td>
+										<td>主协井断面:</td>
+										<td>&nbsp;</td>
+										<td>主协井倾向:</td>
+										<td>&nbsp;</td>
+										<td>主协井倾角:</td>
+										<td>&nbsp;</td>
+										<td>主协井长度:</td>
+										<td>&nbsp;</td>
+										<td>副协井坐标:</td>
+										<td>&nbsp;</td>
+									</tr>
+									<tr>
+										<td>&nbsp;</td>
+										<td>主协井坐标:</td>
+										<td>&nbsp;</td>
+										<td>主协井断面:</td>
+										<td>&nbsp;</td>
+										<td>主协井倾向:</td>
+										<td>&nbsp;</td>
+										<td>主协井倾角:</td>
+										<td>&nbsp;</td>
+										<td>主协井长度:</td>
+										<td>&nbsp;</td>
+										<td>副协井坐标:</td>
+										<td>&nbsp;</td>
+									</tr>
+									<tr>
+										<td>&nbsp;</td>
+										<td>副协井断面:</td>
+										<td>&nbsp;</td>
+										<td>副协井倾向:</td>
+										<td>&nbsp;</td>
+										<td>副协井倾角:</td>
+										<td>&nbsp;</td>
+										<td>副协井长度:</td>
+										<td>&nbsp;</td>
+										<td>回风井坐标:</td>
+										<td>&nbsp;</td>
+										<td>回风井断面:</td>
+										<td>&nbsp;</td>
+									</tr>
+									<tr>
+										<td>&nbsp;</td>
+										<td>回风井倾向:</td>
+										<td>&nbsp;</td>
+										<td>回风井倾角:</td>
+										<td>&nbsp;</td>
+										<td>回风井长度:</td>
+										<td>&nbsp;</td>
+										<td>现采煤层:</td>
+										<td>&nbsp;</td>
+										<td>采煤面个数:</td>
+										<td>&nbsp;</td>
+										<td>掘进头个数:</td>
+										<td>&nbsp;</td>
+									</tr>
+									<tr>
+										<td>&nbsp;</td>
+										<td>矿井通风能力:</td>
+										<td>&nbsp;</td>
+										<td>矿井供电能力:</td>
+										<td>&nbsp;</td>
+										<td>矿井提升能力:</td>
+										<td>&nbsp;</td>
+										<td>矿井抽水能力:</td>
+										<td>&nbsp;</td>
+										<td>现采煤层硫份:</td>
+										<td>&nbsp;</td>
+										<td>现采煤层发热量:</td>
+										<td>&nbsp;</td>
+									</tr>
+									<tr>
+										<td>&nbsp;</td>
+										<td>现采煤层灰份:</td>
+										<td>&nbsp;</td>
+										<td>现采煤层水份:</td>
+										<td>&nbsp;</td>
+										<td>现采煤层固定碳:</td>
+										<td>&nbsp;</td>
+										<td>现采煤层厚度范围:</td>
+										<td>&nbsp;</td>
+										<td>现采煤层顶板岩性:</td>
+										<td>&nbsp;</td>
+										<td>现采煤层平均厚度:</td>
+										<td>&nbsp;</td>
+									</tr>
+									<tr>
+										<td>&nbsp;</td>
+										<td>现采煤层保有资源量:</td>
+										<td>&nbsp;</td>
+										<td>现采煤层地板岩性:</td>
+										<td>&nbsp;</td>
+										<td>回采面保有资源量:</td>
+										<td>&nbsp;</td>
+										<td>接续面保有资源储量:</td>
+										<td>&nbsp;</td>
+										<td>接续面保有时间:</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+									</tr>
+									<tr>
+										<td>&nbsp;</td>
+										<td>实际坑口价(煤粉及块煤):</td>
+										<td>&nbsp;</td>
+										<td>采掘工作是否外包:</td>
+										<td><a href="##" style="color: #fff;">是</a></td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+									</tr>
+								</tbody>
+							</table>
+							<table class="tab3"  border="0" cellpadding="0" cellspacing="0" width="100%">
+								<tbody>
+									<tr>
+										<td style="border-bottom: 2px solid orange;text-align: center;">履行义务:</td>
+										<td colspan="8">&nbsp;</td>
+									</tr>
+									<tr>
+										<td>&nbsp;</td>
+										<td>矿产资源补偿费(应缴):</td>
+										<td>&nbsp;</td>
+										<td>矿产资源补偿费(减缴):</td>
+										<td>&nbsp;</td>
+										<td>矿产资源补偿费(实缴):</td>
+										<td>&nbsp;</td>
+										<td>矿产资源补偿费(欠费合计):</td>
+										<td>&nbsp;</td>
+									</tr>
+									<tr>
+										<td>&nbsp;</td>
+										<td>采矿权使用费(应缴):</td>
+										<td>&nbsp;</td>
+										<td>采矿权使用费(减缴):</td>
+										<td>&nbsp;</td>
+										<td>采矿权使用费(实缴):</td>
+										<td>&nbsp;</td>
+										<td>采矿权使用费(欠费合计):</td>
+										<td>&nbsp;</td>
+									</tr>
+									<tr>
+										<td>&nbsp;</td>
+										<td>采矿权价款(应缴):</td>
+										<td>&nbsp;</td>
+										<td>采矿权价款(减缴):</td>
+										<td>&nbsp;</td>
+										<td>采矿权价款(实缴):</td>
+										<td>&nbsp;</td>
+										<td>采矿权价款(欠费合计):</td>
+										<td>&nbsp;</td>
+									</tr>
+									<tr>
+										<td>&nbsp;</td>
+										<td>土地复垦费(应缴):</td>
+										<td>&nbsp;</td>
+										<td>土地复垦费(减缴):</td>
+										<td>&nbsp;</td>
+										<td>土地复垦费(实缴):</td>
+										<td>&nbsp;</td>
+										<td>土地复垦费(欠费合计):</td>
+										<td>&nbsp;</td>
+									</tr>
+									<tr>
+										<td>&nbsp;</td>
+										<td>矿山地质环境治理恢复保证金(应缴):</td>
+										<td>&nbsp;</td>
+										<td>矿山地质环境治理恢复保证金(减缴):</td>
+										<td>&nbsp;</td>
+										<td>矿山地质环境治理恢复保证金(实缴):</td>
+										<td>&nbsp;</td>
+										<td>矿山地质环境治理恢复保证金(欠费合计):</td>
 										<td>&nbsp;</td>
 									</tr>
 								</tbody>
@@ -488,6 +574,14 @@
 										</tr>
 									</tbody>
 								</table>
+							</div>
+							<div class="maps-box">
+								<div class="maps">
+									<!--地图的位置-->
+								</div>
+								<div id="close" class="clos">
+									<em class="em">关闭</em>
+								</div>
 							</div>
 						</div>
 						<div class="box1-content2" style="display: none;">
@@ -607,6 +701,113 @@
 							</div>
 							<!--第三层结束-->
 						</div>
+						<!--第四层-->
+						<div class="merger" style="display: none;">
+							<table border="0" cellspacing="0" cellpadding="0"  class="tab-content2">
+								<tbody>
+									<tr>
+										<td>兼并重组保留或关闭煤矿:</td>
+										<td>&nbsp;</td>
+										<td>是否获得兼并重组后采矿许可证:</td>
+										<td>&nbsp;</td>
+									</tr>
+									<tr>
+										<td>是否获得兼并重组后安全生产许可证:</td>
+										<td>&nbsp;</td>
+										<td>是否保留原矿范围不变:</td>
+										<td>&nbsp;</td>
+									</tr>
+									<tr>
+										<td>是否保留原生产系统:</td>
+										<td>&nbsp;</td>
+										<td>兼并重组前生产规模:</td>
+										<td>&nbsp;</td>
+									</tr>
+									<tr>
+										<td>兼并重组后生产规模:</td>
+										<td>&nbsp;</td>
+										<td>是否获得生产能力核定:</td>
+										<td>&nbsp;</td>
+									</tr>
+									<tr>
+										<td>兼并重组前批准开采煤层编号:</td>
+										<td>&nbsp;</td>
+										<td>兼并重组后批准开采煤层编号:</td>
+										<td>&nbsp;</td>
+									</tr>
+									<tr>
+										<td>是否获得兼并重组批复文件:</td>
+										<td>&nbsp;</td>
+										<td>兼并前保有资源储量:</td>
+										<td>&nbsp;</td>
+									</tr>
+									<tr>
+										<td>兼并后保有资源储量:</td>
+										<td>&nbsp;</td>
+										<td>兼并重组前矿区面积:</td>
+										<td>&nbsp;</td>
+									</tr>
+									<tr>
+										<td>兼并重组后矿区面积:</td>
+										<td>&nbsp;</td>
+										<td>兼并重组前矿区拐点坐标:</td>
+										<td>&nbsp;</td>
+									</tr>
+									<tr>
+										<td>兼并重组后矿区拐点坐标:</td>
+										<td>&nbsp;</td>
+										<td>兼并前保开采标高:</td>
+										<td>&nbsp;</td>
+									</tr>
+									<tr>
+										<td>兼并后保开采标高:</td>
+										<td>&nbsp;</td>
+										<td>是否加入主体企业:</td>
+										<td>&nbsp;</td>
+									</tr>
+									<tr>
+										<td>是否获得兼并重组实施方案批复:</td>
+										<td>&nbsp;</td>
+										<td>是否获得拟预留文件:</td>
+										<td>&nbsp;</td>
+									</tr>
+									<tr>
+										<td>是否完成地质勘探报告:</td>
+										<td>&nbsp;</td>
+										<td>是否完成新开发利用方案、土地复垦、矿山恢复治理:</td>
+										<td>&nbsp;</td>
+									</tr>
+									<tr>
+										<td>是否完成初步设计:</td>
+										<td>&nbsp;</td>
+										<td>是否完成水资源论证:</td>
+										<td>&nbsp;</td>
+									</tr>
+									<tr>
+										<td>是否完成水土保持报告:</td>
+										<td>&nbsp;</td>
+										<td>是否完成地灾评估报告</td>
+										<td>&nbsp;</td>
+									</tr>
+									<tr>
+										<td>是否完成安全预评价</td>
+										<td>&nbsp;</td>
+										<td>是否完成节能评估</td>
+										<td>&nbsp;</td>
+									</tr>
+									<tr>
+										<td>是否完成安全专篇</td>
+										<td>&nbsp;</td>
+										<td>是否获得动工许可</td>
+										<td>&nbsp;</td>
+									</tr>
+									<tr>
+										<td>是否通过验收</td>
+										<td>&nbsp;</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
 						<div class="box1-content4" style="display: none;">
 							<!--轮播的时间轴开始-->
 							<div id="container">
@@ -668,6 +869,164 @@
 													<td>&nbsp;</td>
 													<td>&nbsp;</td>
 												</tr>
+												<tr>
+													<td>&nbsp;</td>
+													<td>附表1</td>
+													<td>&nbsp;</td>
+													<td>&nbsp;</td>
+													<td>&nbsp;</td>
+													<td>&nbsp;</td>
+												</tr>
+												<tr>
+													<td>&nbsp;</td>
+													<td>附表1</td>
+													<td>&nbsp;</td>
+													<td>&nbsp;</td>
+													<td>&nbsp;</td>
+													<td>&nbsp;</td>
+												</tr>
+												<tr>
+													<td>&nbsp;</td>
+													<td>附表1</td>
+													<td>&nbsp;</td>
+													<td>&nbsp;</td>
+													<td>&nbsp;</td>
+													<td>&nbsp;</td>
+												</tr>
+												<tr>
+													<td>&nbsp;</td>
+													<td>附表1</td>
+													<td>&nbsp;</td>
+													<td>&nbsp;</td>
+													<td>&nbsp;</td>
+													<td>&nbsp;</td>
+												</tr>
+												<tr>
+													<td>&nbsp;</td>
+													<td>附表1</td>
+													<td>&nbsp;</td>
+													<td>&nbsp;</td>
+													<td>&nbsp;</td>
+													<td>&nbsp;</td>
+												</tr><tr>
+													<td>&nbsp;</td>
+													<td>附表1</td>
+													<td>&nbsp;</td>
+													<td>&nbsp;</td>
+													<td>&nbsp;</td>
+													<td>&nbsp;</td>
+												</tr>
+												<tr>
+													<td>&nbsp;</td>
+													<td>附表1</td>
+													<td>&nbsp;</td>
+													<td>&nbsp;</td>
+													<td>&nbsp;</td>
+													<td>&nbsp;</td>
+												</tr>
+												<tr>
+													<td>&nbsp;</td>
+													<td>附表1</td>
+													<td>&nbsp;</td>
+													<td>&nbsp;</td>
+													<td>&nbsp;</td>
+													<td>&nbsp;</td>
+												</tr>
+												<tr>
+													<td>&nbsp;</td>
+													<td>附表1</td>
+													<td>&nbsp;</td>
+													<td>&nbsp;</td>
+													<td>&nbsp;</td>
+													<td>&nbsp;</td>
+												</tr>
+												<tr>
+													<td>&nbsp;</td>
+													<td>附表1</td>
+													<td>&nbsp;</td>
+													<td>&nbsp;</td>
+													<td>&nbsp;</td>
+													<td>&nbsp;</td>
+												</tr><tr>
+													<td>&nbsp;</td>
+													<td>附表1</td>
+													<td>&nbsp;</td>
+													<td>&nbsp;</td>
+													<td>&nbsp;</td>
+													<td>&nbsp;</td>
+												</tr>
+												<tr>
+													<td>&nbsp;</td>
+													<td>附表1</td>
+													<td>&nbsp;</td>
+													<td>&nbsp;</td>
+													<td>&nbsp;</td>
+													<td>&nbsp;</td>
+												</tr>
+												<tr>
+													<td>&nbsp;</td>
+													<td>附表1</td>
+													<td>&nbsp;</td>
+													<td>&nbsp;</td>
+													<td>&nbsp;</td>
+													<td>&nbsp;</td>
+												</tr>
+												<tr>
+													<td>&nbsp;</td>
+													<td>附表1</td>
+													<td>&nbsp;</td>
+													<td>&nbsp;</td>
+													<td>&nbsp;</td>
+													<td>&nbsp;</td>
+												</tr>
+												<tr>
+													<td>&nbsp;</td>
+													<td>附表1</td>
+													<td>&nbsp;</td>
+													<td>&nbsp;</td>
+													<td>&nbsp;</td>
+													<td>&nbsp;</td>
+												</tr>
+												<tr>
+													<td>&nbsp;</td>
+													<td>附表1</td>
+													<td>&nbsp;</td>
+													<td>&nbsp;</td>
+													<td>&nbsp;</td>
+													<td>&nbsp;</td>
+												</tr>
+												<tr>
+													<td>&nbsp;</td>
+													<td>附表1</td>
+													<td>&nbsp;</td>
+													<td>&nbsp;</td>
+													<td>&nbsp;</td>
+													<td>&nbsp;</td>
+												</tr>
+												<tr>
+													<td>&nbsp;</td>
+													<td>附表1</td>
+													<td>&nbsp;</td>
+													<td>&nbsp;</td>
+													<td>&nbsp;</td>
+													<td>&nbsp;</td>
+												</tr>
+												<tr>
+													<td>&nbsp;</td>
+													<td>附表1</td>
+													<td>&nbsp;</td>
+													<td>&nbsp;</td>
+													<td>&nbsp;</td>
+													<td>&nbsp;</td>
+												</tr>
+												<tr>
+													<td>&nbsp;</td>
+													<td>附表1</td>
+													<td>&nbsp;</td>
+													<td>&nbsp;</td>
+													<td>&nbsp;</td>
+													<td>&nbsp;</td>
+												</tr>
 											</tbody>
 										</table>
 									</div>
@@ -986,6 +1345,7 @@
 													<td>&nbsp;</td>
 													<td>附表1</td>
 													<td>&nbsp;</td>
+													
 													<td>&nbsp;</td>
 													<td>&nbsp;</td>
 													<td>&nbsp;</td>
@@ -1023,7 +1383,7 @@
 									<span index="3"></span>
 									<span index="4"></span>
 									<span index="5"></span>
-									<span index="6"></span>
+									<span index="6"  ></span>
 									<span index="7"></span>
 									<span index="8"></span>
 									<span index="9"></span>
@@ -1034,6 +1394,10 @@
 								<a href="javascript:;" id="next" class="arrow">&gt;</a>
 							</div>
 							<!--轮播的时间轴结束-->
+						</div>
+						<!--网络云-->
+						<div class="box1-content5" style="display: none;">
+							
 						</div>
 						<!--最大的选项卡结束-->
 					</div>
@@ -1217,6 +1581,7 @@
 									</tr>
 								</tbody>
 							</table>
+							
 						</div>
 							<div class="forestry" style="display: none;">
 							<table border="0" cellpadding="0" cellspacing="0" class="even-tab">
@@ -1268,6 +1633,12 @@
 						</div>
 					</div>
 					<!--第二层选项卡结束-->
+					<!--第三层开始-->
+					<div class="box3" style="display: none;"></div>
+					<!--第三层结束-->
+					<!--第四层开始-->
+					<div class="box4"  style="display: none;"></div>
+					<!--第四层结束-->
 					<!--尾部的图片开始-->
 					<p class="tu-foot">
 						<img src="img/bg-bottom-ranking-list.png" alt="" />
@@ -1277,9 +1648,8 @@
 				<!--最大的盒子结束-->
 			</div>
 		</section>
-		<!--引入Jquery库-->
-		<script src="js/jquery-3.2.0.js"></script>
-		<!--引入js文件-->
-		<script src="js/new_file.js"></script>
+		<div class="return-top">
+			<a href="####" class="return"></a>
+		</div>
 	</body>
 </html>

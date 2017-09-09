@@ -1,32 +1,24 @@
 $(document).ready(function(){
-				/*拐点坐标弹出框开始*/
-				$('#close').click(function(){
+		$('#zuobiao').click(function(){
+			$('.coordinate').toggle(300);
+		});
+		$('#close').click(function(){
 					$('.coordinate').hide(300);
 				});
-				
-				$("#zuobiao").click(function(event) {
-			var e = window.event || event;
-			if (e.stopPropagation) {
-				e.stopPropagation();
-			} else {
-				e.cancelBubble = true;
-			}
-			$(".coordinate").show(300);
+		$('#diagram').click(function(){
+			$(".maps-box").toggle(300);
 		});
-		$(".coordinate").click(function(event) {
-					var e = window.event || event;
-					if (e.stopPropagation) {
-						e.stopPropagation();
-					} else {
-						e.cancelBubble = true;
-					}
+		$('.em').click(function(){
+				$(".maps-box").hide(300);
 		});
-		document.onclick = function() {
-			$(".coordinate").hide(300);
-		};
 		/*拐点坐标结束*/
+		$('.return-top').click(function(){
+					$('html,body').animate({
+						scrollTop: '0px'
+					}, 300);
+				});
 		/*选项卡及隔行变色开始*/
-				$(".box1-table tbody td:odd").css('color','#8493e3');
+				$(".box1-table tbody tr.tr2 td:odd").css('color','#8493e3');
 				$('.box1-content2 tbody td:odd').css('color','#8493e3');
 		/*选项卡点击事件*/
 				$('.box1-div li').click(function(){
@@ -35,7 +27,6 @@ $(document).ready(function(){
 					$('.box1>div').css('display','none');
 					$('.box1>div:eq('+$(this).index()+')').css('display','block');
 				});
-				
 				$('.meun ul>li').click(function(){
 					$('.meun ul>li').removeClass('active');
 					$(this).addClass('active');
