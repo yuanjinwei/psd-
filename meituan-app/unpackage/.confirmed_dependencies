@@ -1,0 +1,84 @@
+{
+  "index.html": {
+    "resources": [
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "css/new_file.css",
+      "img/erweima.png",
+      "css/iconfont.css",
+      "img/1.png",
+      "img/2.png",
+      "img/3.png",
+      "img/4.png",
+      "img/5.png",
+      "img/6.png",
+      "img/7.png",
+      "img/8.png",
+      "a.html"
+    ],
+    "refer": [
+      "a.html",
+      "b.html",
+      "c.html",
+      "d.html",
+      "e.html"
+    ]
+  },
+  "a.html": {
+    "resources": [
+      "img/2.png",
+      "fonts/mui.ttf",
+      "img/8.png",
+      "img/7.png",
+      "css/new_file.css",
+      "img/3.png",
+      "js/mui.min.js",
+      "img/1.png",
+      "img/5.png",
+      "img/6.png",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "img/4.png",
+      "css/a.css"
+    ],
+    "refer": []
+  },
+  "b.html": {
+    "resources": [
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "css/new_file.css",
+      "css/b.css"
+    ],
+    "refer": []
+  },
+  "c.html": {
+    "resources": [
+      "css/c.css",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "css/mui.min.css"
+    ],
+    "refer": []
+  },
+  "d.html": {
+    "resources": [
+      "css/d.css",
+      "fonts/mui.ttf"
+    ],
+    "refer": []
+  },
+  "e.html": {
+    "resources": [
+      "fonts/mui.ttf",
+      "css/e.css",
+      "js/mui.min.js",
+      "css/iconfont.css",
+      "css/mui.min.css"
+    ],
+    "refer": []
+  }
+}

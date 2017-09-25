@@ -2,7 +2,10 @@ $(document).ready(function(){
 		$('#zuobiao').click(function(){
 			$('.coordinate').toggle(300);
 		});
-		$('#close').click(function(){
+		$("#zzjg").click(function(){
+			$('.zuzhi').show(300);
+		});
+		$('#close1').click(function(){
 					$('.coordinate').hide(300);
 				});
 		$('#diagram').click(function(){
@@ -10,6 +13,7 @@ $(document).ready(function(){
 		});
 		$('.em').click(function(){
 				$(".maps-box").hide(300);
+				$(".zuzhi").hide(300);
 		});
 		/*拐点坐标结束*/
 		$('.return-top').click(function(){
@@ -38,6 +42,48 @@ $(document).ready(function(){
 					$(this).addClass('active1');
 					$('.box2>div').css('display','none');
 					$('.box2>div:eq('+$(this).index()+')').css('display','block');
+				});
+				$('.barmaster').mouseover(function(){
+					$('.bar-div').show(200);
+				})
+				$('.barmaster').mouseout(function(){
+					$('.bar-div').hide(200);
+				});
+				$('.engineer').mouseover(function(){
+					$('.eng-div').show(200);
+				})
+				$('.engineer').mouseout(function(){
+					$('.eng-div').hide(200);
+				});
+				$('.production').mouseover(function(){
+					$('.pro-div').show(200);
+				})
+				$('.production').mouseout(function(){
+					$('.pro-div').hide(200);
+				});
+				$('.safe').mouseover(function(){
+					$('.safe-div').show(200);
+				})
+				$('.safe').mouseout(function(){
+					$('.safe-div').hide(200);
+				});
+				$('.electromechanical').mouseover(function(){
+					$('.elec-div').show(200);
+				})
+				$('.electromechanical').mouseout(function(){
+					$('.elec-div').hide(200);
+				});
+				$('.ventilation').mouseover(function(){
+					$('.ven-div').show(200);
+				})
+				$('.ventilation').mouseout(function(){
+					$('.ven-div').hide(200);
+				});
+				$('.logistics').mouseover(function(){
+					$('.logis-div').show(200);
+				})
+				$('.logistics').mouseout(function(){
+					$('.logis-div').hide(200);
 				});
 			});
 			

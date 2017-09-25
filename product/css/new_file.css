@@ -18,6 +18,7 @@ article,aside,dialog,footer,header,section,nav,figure,menu{display:block}
 body{
 	background: url(../img/bg-container.png) top center no-repeat fixed;
 	position: relative;
+	width: 100%;
 }
 td>a{
 	color:rgb(132, 147, 227);
@@ -227,6 +228,250 @@ header{
 	padding: 15px 25px;
 	position: relative;
 }
+.zuzhi{
+	position: absolute;
+	right: 0px;
+	top: 90px;
+	width:1050px ;
+	height:635px;
+	z-index: 999;
+	border: 2px solid #fff;
+	background: #394184;
+	display: none;
+}
+.picture{
+	width: 1050px;
+	height: 575px;
+	position: relative;
+	display: block;
+}
+.picture img{
+	width: 1050px;
+	height: 373px;
+	position: absolute;
+	bottom: 75px;
+}
+.barmaster{
+	position: absolute;
+	top: 170px;
+	right: 47%;
+	width: 90px;
+	height: 25px;
+}
+
+.engineer{
+	position: absolute;
+	top:52%;
+	left: 4%;
+	width: 90px;
+	height: 25px;
+}
+.eng-div{
+	position: absolute;
+	top: 35%;
+	left: 1%;
+	background: rgba(0,0,0,.5);
+	display: none;
+}
+.eng-div table tr td{
+	font-size: 13px;
+	color: #fff;
+	padding: 5px;
+}
+.production{
+	position: absolute;
+	top: 52%;
+	left: 18%;
+	width: 90px;
+	height: 25px;
+}
+.pro-div{
+	position: absolute;
+	top: 35%;
+	left: 14%;
+	background: rgba(0,0,0,.5);
+	display: none;
+}
+.pro-div table tr td{
+	font-size: 13px;
+	color: #fff;
+	padding: 5px;
+}
+.safe{
+	position: absolute;
+	top: 52%;
+	left: 32%;
+	width: 90px;
+	height: 25px;
+}
+.safe-div{
+	position: absolute;
+	top: 35%;
+	left: 30%;
+	background: rgba(0,0,0,.5);
+	display: none;
+}
+.safe-div table tr td{
+	font-size: 13px;
+	color: #fff;
+	padding: 5px;
+}
+.electromechanical{
+	position: absolute;
+	top: 300px;
+	left: 44%;
+	width: 90px;
+	height: 25px;
+}
+.elec-div{
+	position: absolute;
+	top: 35%;
+	left: 44%;
+	background: rgba(0,0,0,.5);
+	display: none;
+}
+.elec-div table tr td{
+	font-size: 13px;
+	color: #fff;
+	padding: 5px;
+}
+.ven-div{
+	position: absolute;
+	top: 35%;
+	left: 56%;
+	background: rgba(0,0,0,.5);
+	display: none;
+}
+.ven-div table tr td{
+	font-size: 13px;
+	color: #fff;
+	padding: 5px;
+}
+.ventilation{
+	position: absolute;
+	top: 52%;
+	left: 57%;
+	width: 90px;
+	height: 25px;
+}
+.logistics{
+	position: absolute;
+	top: 52%;
+	left: 70%;
+	width: 90px;
+	height: 25px;
+}
+.logis-div{
+	position: absolute;
+	top: 35%;
+	left: 68%;
+	background: rgba(0,0,0,.5);
+	display: none;
+}
+.logis-div table tr td{
+	font-size: 13px;
+	color: #fff;
+	padding: 5px;
+}
+.bar-div{
+	position: absolute;
+	top: 80px;
+	right: 20%;
+	display: none;
+	background: rgba(0,0,0,.5);
+}
+.bar-div table tr td{
+	font-size: 12px;
+	color: #fff;
+	padding: 5px 5px;
+}
+.bar-div table tr td:nth-child(2){
+	color:#8493e3; 
+}
+.people{
+	width: 25px;
+	height: 44px;
+	padding: 0 5px;
+	text-align: center;
+	color: #fff;
+	font-size:13px ;
+	border: 1px solid #ddd;
+}
+.p-one{
+	position: absolute;
+	bottom:15%;
+	left:25px;
+}
+.p-two{
+	position: absolute;
+	bottom:15%;
+	left:70px;
+}
+.p-three{
+	position: absolute;
+	bottom:15%;
+	left:124px;
+}
+.p-four{
+	position: absolute;
+	bottom:15%;
+	left:176px;
+}
+.p-five{
+	position: absolute;
+	bottom:15%;
+	left:223px;
+}
+.p-six{
+	position: absolute;
+	bottom:15%;
+	left:277px;
+}
+.p-seven{
+	position: absolute;
+	bottom:15%;
+	left:370px;
+}
+.p-eight{
+	position: absolute;
+	bottom:15%;
+	left:43.8%;
+}
+.p-nine{
+	position: absolute;
+	bottom:15%;
+	left:51.5%;
+}
+.p-ten{
+	position: absolute;
+	bottom:15%;
+	left:60.2%;
+}
+.p-eleven{
+	position: absolute;
+	bottom:15%;
+	right:24.5%;
+}
+.p-twelve{
+	position: absolute;
+	bottom:15%;
+	right:16.8%;
+}
+.p-left{
+	position: absolute;
+	bottom:15%;
+	right:12%;
+}
+.p-middle{
+	position: absolute;
+	bottom:15%;
+	right:8%;
+}
+.p-last{
+	position: absolute;
+	bottom:15%;
+	right:4%;
+}
 .box1-div{
 	height: 56px;
 	background: rgba(58,122,254,.12);
@@ -257,7 +502,7 @@ header{
 .box1-table td{
 	font-size: 12px;
 	color: #fff;
-	padding: 10px 10px;
+	padding: 10px 0px;
 }
 .tab2{
 	border-bottom: 1px solid rgba(255,255,255,.5);
@@ -267,7 +512,7 @@ header{
 .tab2 td{
 	font-size: 12px;
     color: #fff;
-    padding: 10px 3px;
+    padding: 10px 0px;
     text-align: left;
 }
 .tab3{
@@ -277,17 +522,20 @@ header{
 .tab3 td{
 	font-size: 12px;
     color: #fff;
-    padding: 10px 8px;
+    padding: 10px 0px;
     text-align: left;
+}
+.tab3 td:nth-child(3),.tab3 td:nth-child(5),.tab3 td:nth-child(7),.tab3 td:nth-child(9){
+	color: #8493e3;
 }
 .tab5{
     margin-top: 20px;
     padding: 15px 15px;
 }
 .tab5 td{
-		font-size: 12px;
+	font-size: 12px;
     color: #fff;
-    padding: 10px 8px;
+    padding: 10px 0px;
     text-align: left;
 }
 .tu-foot img{
@@ -529,14 +777,15 @@ header{
 	width: 600px;
 	height: 334px;
 	overflow: auto;
-	position: absolute;
-	top: 190px;
-	right: 220px;
+	position: fixed;
+	top:28%;
+	right: 30%;
 	z-index: 998;
 	background: #394184;
 	border: 2px solid #fff;
 	padding: 15px 15px;
 	display: none;
+	z-index: 9999999;
 }
 .maps-box{
 	width: 1050px;
@@ -544,9 +793,9 @@ header{
 	border: 2px solid #fff;
 	display: none;
 	z-index: 999;
-	position: absolute;
-	top: 140px;
-	right: 0px;
+	position: fixed;
+	top: 28%;
+	right: 18.5%;
 }
 .maps{
 	width: 1050px;
@@ -609,6 +858,12 @@ header{
 }
 .box1-content3{
 	height: 800px;
+}
+#zzjg{
+	color: #fff;
+    background: #394184;
+    padding: 5px;
+    border-radius: 5px;
 }
 .organization{
 	color: #fff;

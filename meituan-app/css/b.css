@@ -1,0 +1,22 @@
+.public-color{
+	background: #fff;
+}
+.public-color a button{
+	padding: 5px 0 0 0;
+	border: 0;
+	color: #666;
+}
+.public-color a span{
+	color: #000;
+	margin-top:-8px;
+}
+.public-color h1 input{
+	width: 80%;
+	border-radius: 10px;
+	height: 25px;
+	border: 0;
+	color: #06bfAC;
+	font-size: 13px;
+	background: #eee;
+	margin-left: 20px;
+}
